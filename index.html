@@ -52,20 +52,14 @@
     <!-- Header / Navigation -->
     <header class="sticky top-0 z-50 bg-slate-950/80 backdrop-blur-xl border-b border-slate-800/80">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
-            <div class="flex items-center gap-3.5">
-                <!-- Dental Tooth / Sparkle Logo Emblem -->
-                <div class="w-11 h-11 rounded-2xl bg-gradient-to-tr from-sky-500 via-sky-400 to-amber-400 p-0.5 shadow-lg shadow-sky-500/20">
-                    <div class="w-full h-full bg-slate-950 rounded-[14px] flex items-center justify-center">
-                        <i data-lucide="sparkles" class="w-6 h-6 text-sky-400"></i>
-                    </div>
-                </div>
-                <div>
-                    <span class="font-bold text-lg tracking-tight block text-white flex items-center gap-2">
-                        The Streets Are Hungry <span class="text-xs px-2 py-0.5 rounded-full bg-amber-500/10 border border-amber-500/20 text-amber-400 font-mono">DSO & REAL ESTATE</span>
-                    </span>
-                    <span class="text-xs text-slate-400 block -mt-0.5">Turnkey Dental Practice Facilities • Central Ohio</span>
-                </div>
+            <!-- Pure Typography Header Brand (No Logo Boxes or Squares) -->
+            <div>
+                <a href="#" class="font-black text-xl tracking-tight block text-white hover:text-sky-400 transition-colors">
+                    The Streets Are Hungry <span class="text-xs font-mono font-bold tracking-widest text-amber-400 uppercase ml-1.5 px-2.5 py-0.5 rounded-full bg-amber-500/10 border border-amber-500/20">DSO</span>
+                </a>
+                <span class="text-xs text-slate-400 block -mt-0.5 font-medium tracking-wide">Dental Practice Facilities & Business Operations • Central Ohio</span>
             </div>
+
             <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-300">
                 <a href="#pitch" class="hover:text-sky-400 transition-colors">Operatory Model</a>
                 <a href="#calculator" class="hover:text-sky-400 transition-colors">Financial Calculator</a>
@@ -307,3 +301,15 @@
 
         function copyContractText() {
             const text = `MASTER SERVICES & FACILITY SUBLEASE AGREEMENT\nParties: The Streets Are Hungry LLC ("DSO") and [Practice Name], PC/LLC ("Practice").\nSection 1: Practice maintains 100% clinical autonomy under Ohio ORC Chapter 4715.`;
+            navigator.clipboard.writeText(text);
+            alert("Contract preview text copied to clipboard!");
+        }
+
+        function handleFormSubmit(e) {
+            e.preventDefault();
+            alert("Thank you for your inquiry! Jerry Alexander will reach out to you within 24 hours.");
+            e.target.reset();
+        }
+    </script>
+</body>
+</html>
