@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Streets Are Hungry LLC | Dental DSO & Real Estate Management</title>
+    <title>The Streets Are Hungry LLC | Dental DSO & Practice Facilities</title>
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Lucide Icons -->
@@ -32,7 +32,7 @@
     </script>
     <style>
         .gradient-text {
-            background: linear-gradient(135deg, #38bdf8 0%, #fbbf24 100%);
+            background: linear-gradient(135deg, #38bdf8 0%, #38bdf8 50%, #fbbf24 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
@@ -43,7 +43,7 @@
         }
         .glass-card:hover {
             border-color: rgba(56, 189, 248, 0.35);
-            box-shadow: 0 10px 30px -10px rgba(2, 132, 199, 0.2);
+            box-shadow: 0 10px 30px -10px rgba(2, 132, 199, 0.25);
         }
     </style>
 </head>
@@ -52,20 +52,25 @@
     <!-- Header / Navigation -->
     <header class="sticky top-0 z-50 bg-slate-950/80 backdrop-blur-xl border-b border-slate-800/80">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
-            <div class="flex items-center gap-3">
-                <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-sky-500 to-amber-400 flex items-center justify-center font-bold text-slate-950 text-xl shadow-lg shadow-sky-500/20">
-                    TSAH
+            <div class="flex items-center gap-3.5">
+                <!-- Dental Tooth / Sparkle Logo Emblem -->
+                <div class="w-11 h-11 rounded-2xl bg-gradient-to-tr from-sky-500 via-sky-400 to-amber-400 p-0.5 shadow-lg shadow-sky-500/20">
+                    <div class="w-full h-full bg-slate-950 rounded-[14px] flex items-center justify-center">
+                        <i data-lucide="sparkles" class="w-6 h-6 text-sky-400"></i>
+                    </div>
                 </div>
                 <div>
-                    <span class="font-bold text-lg tracking-tight block text-white">The Streets Are Hungry <span class="text-xs text-amber-400 font-mono">LLC</span></span>
-                    <span class="text-xs text-slate-400 block -mt-1">Dental DSO & Real Estate Solutions • Central Ohio</span>
+                    <span class="font-bold text-lg tracking-tight block text-white flex items-center gap-2">
+                        The Streets Are Hungry <span class="text-xs px-2 py-0.5 rounded-full bg-amber-500/10 border border-amber-500/20 text-amber-400 font-mono">DSO & REAL ESTATE</span>
+                    </span>
+                    <span class="text-xs text-slate-400 block -mt-0.5">Turnkey Dental Practice Facilities • Central Ohio</span>
                 </div>
             </div>
             <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-300">
-                <a href="#pitch" class="hover:text-sky-400 transition-colors">The Turnkey Model</a>
+                <a href="#pitch" class="hover:text-sky-400 transition-colors">Operatory Model</a>
                 <a href="#calculator" class="hover:text-sky-400 transition-colors">Financial Calculator</a>
                 <a href="#contract" class="hover:text-sky-400 transition-colors">Contract Preview</a>
-                <a href="#contact" class="px-5 py-2.5 rounded-xl bg-gradient-to-r from-sky-500 to-sky-600 text-slate-950 font-bold hover:from-sky-400 hover:to-sky-500 transition-all shadow-lg shadow-sky-500/25">Partner With Us</a>
+                <a href="#contact" class="px-5 py-2.5 rounded-xl bg-gradient-to-r from-sky-500 to-sky-600 text-slate-950 font-bold hover:from-sky-400 hover:to-sky-500 transition-all shadow-lg shadow-sky-500/25">Inquire For Space</a>
             </nav>
         </div>
     </header>
@@ -76,17 +81,25 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="max-w-3xl">
                 <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-sky-500/10 border border-sky-500/25 text-sky-400 text-xs font-semibold mb-6 shadow-inner">
-                    <i data-lucide="shield-check" class="w-4 h-4"></i> Ohio ORC §4715 Compliant DSO Structure
+                    <i data-lucide="shield-check" class="w-4 h-4"></i> Ohio ORC §4715 Compliant Dental Facility Model
                 </div>
                 <h1 class="text-4xl sm:text-6xl font-extrabold text-white tracking-tight leading-[1.1] mb-6">
                     Launch Your Dental Practice Without <span class="gradient-text">Real Estate Overhead</span>.
                 </h1>
-                <p class="text-lg sm:text-xl text-slate-300 mb-10 leading-relaxed">
-                    We provide the fully built-out commercial dental facility, billing, payroll, marketing, and property management. You retain <span class="text-white font-semibold underline decoration-sky-500 underline-offset-4">100% clinical autonomy</span> and practice ownership.
+                <p class="text-lg sm:text-xl text-slate-300 mb-8 leading-relaxed">
+                    Step into a fully built-out Central Ohio dental office equipped with operatories, suction lines, plumbing, IT infrastructure, and back-office DSO operations. You maintain <span class="text-white font-semibold underline decoration-sky-500 underline-offset-4">100% clinical autonomy</span> and practice ownership.
                 </p>
+
+                <!-- Dental Software & Facility Badges -->
+                <div class="flex flex-wrap items-center gap-4 text-xs text-slate-400 mb-10">
+                    <span class="flex items-center gap-1.5"><i data-lucide="check-circle-2" class="w-4 h-4 text-sky-400"></i> Open Dental / Dentrix Ready</span>
+                    <span class="flex items-center gap-1.5"><i data-lucide="check-circle-2" class="w-4 h-4 text-sky-400"></i> Dental Plumbing & Vacuum Systems</span>
+                    <span class="flex items-center gap-1.5"><i data-lucide="check-circle-2" class="w-4 h-4 text-sky-400"></i> HIPAA & Billing Compliant</span>
+                </div>
+
                 <div class="flex flex-col sm:flex-row gap-4">
                     <a href="#calculator" class="inline-flex items-center justify-center gap-2 px-7 py-4 rounded-xl bg-sky-500 text-slate-950 font-bold hover:bg-sky-400 transition-all shadow-lg shadow-sky-500/25">
-                        <i data-lucide="calculator" class="w-5 h-5"></i> Calculate Your Net Earnings
+                        <i data-lucide="calculator" class="w-5 h-5"></i> Calculate Practice Revenue
                     </a>
                     <a href="#contract" class="inline-flex items-center justify-center gap-2 px-7 py-4 rounded-xl bg-slate-900/90 text-slate-200 border border-slate-800 font-semibold hover:bg-slate-800 transition-all shadow-sm">
                         <i data-lucide="file-text" class="w-5 h-5"></i> Review Sublease Agreement
@@ -100,8 +113,8 @@
     <section id="pitch" class="py-24 bg-slate-900/40 border-b border-slate-800/80">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center max-w-2xl mx-auto mb-16">
-                <h2 class="text-3xl sm:text-4xl font-bold text-white mb-4">How The Partnership Works</h2>
-                <p class="text-slate-400">A clean separation between clinical dental care and business operations designed for modern associate dentists.</p>
+                <h2 class="text-3xl sm:text-4xl font-bold text-white mb-4">Turnkey Operatory & DSO Model</h2>
+                <p class="text-slate-400">A clean separation between clinical dental care and real estate management designed for associate dentists.</p>
             </div>
             <div class="grid md:grid-cols-3 gap-8">
                 <!-- Card 1 -->
@@ -117,16 +130,16 @@
                     <div class="w-12 h-12 rounded-2xl bg-amber-500/10 text-amber-400 flex items-center justify-center mb-6 border border-amber-500/20">
                         <i data-lucide="building-2" class="w-6 h-6"></i>
                     </div>
-                    <h3 class="text-xl font-bold text-white mb-3">2. Turnkey Real Estate Space</h3>
-                    <p class="text-slate-400 text-sm leading-relaxed">Skip the $250k+ buildout cost. Walk into a fully equipped Central Ohio dental clinic with plumbing, IT, HVAC, and facilities managed by TSAH LLC.</p>
+                    <h3 class="text-xl font-bold text-white mb-3">2. Built-Out Dental Facility</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">Skip the $250k+ buildout. Walk into a fully pre-plumbed Central Ohio dental clinic with operatory infrastructure, mechanical rooms, HVAC, and facilities managed by TSAH LLC.</p>
                 </div>
                 <!-- Card 3 -->
                 <div class="glass-card p-8 rounded-3xl relative transition-all duration-300">
                     <div class="w-12 h-12 rounded-2xl bg-emerald-500/10 text-emerald-400 flex items-center justify-center mb-6 border border-emerald-500/20">
                         <i data-lucide="trending-up" class="w-6 h-6"></i>
                     </div>
-                    <h3 class="text-xl font-bold text-white mb-3">3. Back-Office DSO Support</h3>
-                    <p class="text-slate-400 text-sm leading-relaxed">We handle marketing, billing/RCM, patient acquisition campaigns, non-clinical payroll, and vendor contracts in exchange for an FMV management fee.</p>
+                    <h3 class="text-xl font-bold text-white mb-3">3. Back-Office DSO Operations</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">We handle marketing, billing/RCM, patient acquisition, non-clinical payroll, and vendor contracts in exchange for a Fair Market Value management fee.</p>
                 </div>
             </div>
         </div>
@@ -138,7 +151,7 @@
             <div class="max-w-3xl mx-auto">
                 <div class="text-center mb-12">
                     <h2 class="text-3xl sm:text-4xl font-bold text-white mb-3">Real-Time Practice Revenue Calculator</h2>
-                    <p class="text-slate-400">Simulate your projected monthly earnings under our turnkey DSO model.</p>
+                    <p class="text-slate-400">Simulate your projected monthly earnings under our turnkey DSO facility model.</p>
                 </div>
 
                 <div class="glass-card rounded-3xl p-6 sm:p-10 shadow-2xl">
@@ -294,15 +307,3 @@
 
         function copyContractText() {
             const text = `MASTER SERVICES & FACILITY SUBLEASE AGREEMENT\nParties: The Streets Are Hungry LLC ("DSO") and [Practice Name], PC/LLC ("Practice").\nSection 1: Practice maintains 100% clinical autonomy under Ohio ORC Chapter 4715.`;
-            navigator.clipboard.writeText(text);
-            alert("Contract preview text copied to clipboard!");
-        }
-
-        function handleFormSubmit(e) {
-            e.preventDefault();
-            alert("Thank you for your inquiry! Jerry Alexander will reach out to you within 24 hours.");
-            e.target.reset();
-        }
-    </script>
-</body>
-</html>
